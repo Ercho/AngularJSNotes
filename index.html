@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html ng-app="dragApp">
+<head>
+  <meta charset="utf-8">
+  <title>Eryk Żurakowski // GitaraGra</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
+  <style>
+  	body {
+  		width: 100vw;
+  		height: 100vh;
+      padding: 0;
+      margin: 0;
+      background-color: #444;
+  	}
+    .add {
+      width: 50px;
+      height: 50px;
+      background-color: #ffd700;
+      border-radius: 100%;
+    }
+    .note {
+      width: 100px;
+      height: 150px;
+      background-color: #fff;
+      border: 2px solid #ffd700;
+      border-radius: 15px 7px 30px 7px;
+      color: #000;
+    }
+    .delnote {
+      width: 16px;
+      height: 16px;
+      float: right;
+    }
+    .editnote {
+      width: 16px;
+      height: 16px;
+      float: left;
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+  </style>
+</head>
+<body ng-controller="DragCtrl">
+  <img class="add" src="img/add.png" alt="dodaj" addnote/>
+</body>
+</html>
